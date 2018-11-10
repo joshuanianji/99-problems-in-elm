@@ -9,3 +9,4 @@ So im trying to change this to Elm 0.19 and it's hard lol. Here is a list of the
 * [31.elm](src/31.elm) (might be right but seems sketchy)
 * [23.elm](src/23.elm)
 * [47.elm](src/47-DEPRECATED.elm) uses infix operators (operators that go between its arguments) but they aren't supported by elm anymore lol
+* [38.elm](src/38.elm) because of my use of the infix operator

@@ -4,7 +4,7 @@ import Task
 import Time exposing (Time)
 import Debug
 
--- measures the time to calculate phi of 10090
+-- measures the time to calculate phi of 10090. Also elm-format fails because of the (..) infix operator defined below lmao
 
 {- ======================================================
    Test 1

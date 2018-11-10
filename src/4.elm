@@ -1,7 +1,8 @@
-module Main exposing (..)
+module Main exposing (countElements, main)
 
-import Html exposing (text)
 import Debug
+import Html exposing (text)
+
 
 
 -- This counts the amount of elements in the list. Wow, this is as simple as one of the answers!!

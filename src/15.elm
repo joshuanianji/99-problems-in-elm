@@ -1,8 +1,9 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List exposing (..)
-import Debug
+
 
 
 -- Another easy one

@@ -1,8 +1,9 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List exposing (..)
-import Debug
+
 
 
 -- this is disgusting
@@ -25,6 +26,7 @@ packIter acc stAcc list =
         [ a, b ] ->
             if a == b then
                 append acc [ append [ a, b ] stAcc ]
+
             else
                 append (append acc [ a :: stAcc ]) [ [ b ] ]
 
@@ -34,6 +36,7 @@ packIter acc stAcc list =
         a :: b :: xs ->
             if a == b then
                 packIter acc (a :: stAcc) (b :: xs)
+
             else
                 packIter (append acc [ a :: stAcc ]) [] (b :: xs)
 

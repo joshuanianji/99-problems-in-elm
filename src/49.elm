@@ -1,7 +1,8 @@
-module Main exposing (..)
+module Main exposing (grayCodes, main)
 
-import Html exposing (..)
 import Debug
+import Html exposing (..)
+
 
 
 -- Graycodes (e.g. grayCode 2 == [ [ 0, 0 ], [ 0, 1 ], [ 1, 1 ], [ 1, 0 ] ])

@@ -1,22 +1,22 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List exposing (..)
-import Debug
+
 
 
 -- labels each list by the amount of elements and the element
 
 
 myLists =
-    [ ['a','a','a']
-    , ['b']
-    , ['c', 'c', 'c']
-    , ['d','d','d','d']
-    , ['e']
-    , ['f', 'f']
+    [ [ 'a', 'a', 'a' ]
+    , [ 'b' ]
+    , [ 'c', 'c', 'c' ]
+    , [ 'd', 'd', 'd', 'd' ]
+    , [ 'e' ]
+    , [ 'f', 'f' ]
     ]
-
 
 
 runLengths : List (List a) -> List ( Int, a )

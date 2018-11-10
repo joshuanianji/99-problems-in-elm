@@ -1,7 +1,8 @@
-module Main exposing (..)
+module Main exposing (Tree(..), isSymmetric, main, mirror, tree1)
 
-import Html exposing (..)
 import Debug
+import Html exposing (..)
+
 
 
 -- testing the symmetry of a binary tree

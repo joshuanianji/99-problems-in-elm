@@ -1,8 +1,9 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List
-import Debug
+
 
 
 -- wasn't that easy but still pretty easy
@@ -23,6 +24,7 @@ dropNth n x =
                 hd :: tl ->
                     if cycle == 1 then
                         dropNthIter amount amount tl
+
                     else
                         hd :: dropNthIter amount (cycle - 1) tl
     in

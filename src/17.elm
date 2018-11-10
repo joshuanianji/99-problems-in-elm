@@ -1,8 +1,9 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List exposing (..)
-import Debug
+
 
 
 -- This was pretty good
@@ -14,12 +15,12 @@ myList =
 
 split list n =
     if n <= 0 then
-        ([], list)
+        ( [], list )
+
     else
-        (take n list, drop n list)
-    
-    
-    
+        ( take n list, drop n list )
+
+
 main : Html msg
 main =
     split myList 0

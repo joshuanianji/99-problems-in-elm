@@ -1,7 +1,8 @@
-module Main exposing (..)
+module Main exposing (Tree(..), addNode, main, toBSTree)
 
-import Html exposing (..)
 import Debug
+import Html exposing (..)
+
 
 
 -- Construsting binary search trees
@@ -29,8 +30,10 @@ addNode number tree =
         Node nodeValue left right ->
             if number == nodeValue then
                 tree
+
             else if number > nodeValue then
                 Node nodeValue left (addNode number right)
+
             else
                 Node nodeValue (addNode number left) right
 

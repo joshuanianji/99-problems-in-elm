@@ -1,8 +1,9 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List exposing (..)
-import Debug
+
 
 
 -- This one was actually very easy
@@ -22,6 +23,7 @@ rleDecode list =
     concatMap
         rleFunc
         list
+
 
 rleFunc : RleCode a -> List a
 rleFunc element =

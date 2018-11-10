@@ -1,8 +1,9 @@
 module Main exposing (main)
 
+import Debug
 import Html exposing (Html)
 import List exposing (..)
-import Debug
+
 
 
 -- An easy one
@@ -21,6 +22,7 @@ dropAt n list =
         hd :: tl ->
             if n == 1 then
                 tl
+
             else
                 hd :: dropAt (n - 1) tl
 
